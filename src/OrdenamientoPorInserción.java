@@ -1,7 +1,10 @@
 public class OrdenamientoPorInserción {
     public static void main(String[] args) {
         int[] arr = {89,45,68,90,29,34,17};
+        System.out.println("El arreglo original es: ");
+        mostrarArreglo(arr);
         insercion(arr);
+        System.out.println("El arreglo ordenado es: ");
         mostrarArreglo(arr);
     }
 
@@ -10,9 +13,10 @@ public class OrdenamientoPorInserción {
         int longitud = arr.length;
 
         for(i=1; i<=longitud-1; i++){
+            aux = arr[i];
             j=i;
-            aux = arr[j];
-                while (j>0 && arr[j-1] > arr[j]) {
+
+                while (j>0 && arr[j-1] > aux) {
                     arr[j] = arr[j-1];
                     j = j-1;
                 }
@@ -24,8 +28,6 @@ public class OrdenamientoPorInserción {
         //Este modulo se encargar de mostrar por pantalla el arreglo
         int i, longitud;
         longitud = arr.length;
-        System.out.println("\n");
-        System.out.println("Los datos del arreglo son");
         for (i = 0; i < longitud; i++) {
             System.out.print(arr[i] + " ");
         }
