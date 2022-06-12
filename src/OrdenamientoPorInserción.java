@@ -1,13 +1,11 @@
 public class OrdenamientoPorInserción {
     public static void main(String[] args) {
         int[] arr = { 89, 45, 68, 90, 29, 34, 17 };
-        /* 
         System.out.println("El arreglo original es: ");
         mostrarArreglo(arr);
         insercion(arr);
         System.out.println("El arreglo ordenado de menor a mayor: ");
         mostrarArreglo(arr);
-        */
         System.out.println("El arreglo ordenado de mayor a menor: ");
         insercionInvertida(arr);
         mostrarArreglo(arr);
