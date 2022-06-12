@@ -1,11 +1,17 @@
 public class OrdenamientoPorInserción {
     public static void main(String[] args) {
         int[] arr = { 89, 45, 68, 90, 29, 34, 17 };
+        /* 
         System.out.println("El arreglo original es: ");
         mostrarArreglo(arr);
         insercion(arr);
-        System.out.println("El arreglo ordenado es: ");
+        System.out.println("El arreglo ordenado de menor a mayor: ");
         mostrarArreglo(arr);
+        */
+        System.out.println("El arreglo ordenado de mayor a menor: ");
+        insercionInvertida(arr);
+        mostrarArreglo(arr);
+        
     }
 
     public static void insercion(int[] arr) {
@@ -13,6 +19,21 @@ public class OrdenamientoPorInserción {
         int longitud = arr.length;
 
         for (i = 1; i <= longitud - 1; i++) {
+            aux = arr[i];
+            j = i;
+            while (j > 0 && arr[j - 1] > aux) {
+                arr[j] = arr[j - 1];
+                j = j - 1;
+            }
+            arr[j] = aux;
+        }
+    }
+
+    public static void insercionInvertida(int[] arr) {
+        int i, j, aux;
+        int longitud = arr.length;
+
+        for (i = longitud -1 ; i <= 0; i--) {
             aux = arr[i];
             j = i;
             while (j > 0 && arr[j - 1] > aux) {
