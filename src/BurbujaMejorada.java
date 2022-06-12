@@ -1,32 +1,52 @@
 public class BurbujaMejorada {
     public static void main(String[] args) {
         int[] arr = { 89, 45, 68, 90, 29, 34, 17 };
+        System.out.println("El arreglo original es: ");
+        mostrarArreglo(arr);
+        System.out.println("El arreglo ordenado de menor a mayor: ");
         burbujaMejorada(arr);
+        mostrarArreglo(arr);
+        System.out.println("El arreglo ordenado de mayor a menor: ");
+        burbujaMejoradaInvertida(arr);
         mostrarArreglo(arr);
     }
 
     public static void burbujaMejorada(int[] arr) {
         boolean ordenado = false;
-        int i = 0, j;
-        int n = arr.length - 1;
+        int i = 0, j, aux;
+        int n = arr.length;
 
-        while (i<n-1 && !ordenado) {
+        while (i < n - 1 && !ordenado) {
             ordenado = true;
-            for (j = 0; j < n-i-2; j++) {
-                if(arr[j] > arr[j+1]){
+            for (j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
                     ordenado = false;
-                    swap(arr, j, j+1);
+                    aux = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = aux;
                 }
             }
             i++;
         }
     }
 
-    public static void swap(int[] arr, int j, int i) {
-        int aux;
-        aux = arr[j];
-        arr [j] = arr[j+1];
-        arr [j+1] = aux;
+    public static void burbujaMejoradaInvertida(int[] arr) {
+        boolean ordenado = false;
+        int i = 0, j, aux;
+        int n = arr.length;
+
+        while (i < n - 1 && !ordenado) {
+            ordenado = true;
+            for (j = 0; j < n - i - 1; j++) {
+                if (arr[j] < arr[j + 1]) {
+                    ordenado = false;
+                    aux = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = aux;
+                }
+            }
+            i++;
+        }
     }
 
     public static void mostrarArreglo(int[] arr) {
@@ -38,4 +58,5 @@ public class BurbujaMejorada {
         }
         System.out.println("\n");
     }
+
 }

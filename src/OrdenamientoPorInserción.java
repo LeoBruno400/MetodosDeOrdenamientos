@@ -3,13 +3,12 @@ public class OrdenamientoPorInserción {
         int[] arr = { 89, 45, 68, 90, 29, 34, 17 };
         System.out.println("El arreglo original es: ");
         mostrarArreglo(arr);
-        insercion(arr);
         System.out.println("El arreglo ordenado de menor a mayor: ");
+        insercion(arr);
         mostrarArreglo(arr);
         System.out.println("El arreglo ordenado de mayor a menor: ");
         insercionInvertida(arr);
         mostrarArreglo(arr);
-
     }
 
     public static void insercion(int[] arr) {
