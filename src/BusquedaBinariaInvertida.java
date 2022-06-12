@@ -16,7 +16,7 @@ public class BusquedaBinariaInvertida {
         sc.close();
     }
 
-    public static int busquedaBinaria(int[] arreglo, int valorBuscado){
+    public static int busquedaBinariaInvertida(int[] arreglo, int valorBuscado){
         //busca de manera binaria un valor numerico en un arreglo. Devuelve la posicion de encontrarlo, -1 de no encontrarlo.
         boolean encontrado;
         int inicio, fin, medio, posicion;
