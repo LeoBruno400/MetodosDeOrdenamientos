@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BusquedaBinariaInversa {
+public class BusquedaBinariaInvertida {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arreglo = {20,18,16,14,12,10,8,6,4,2};
@@ -16,7 +16,7 @@ public class BusquedaBinariaInversa {
         sc.close();
     }
 
-    public static int busquedaBinaria(int[] arreglo, int valorBuscado){
+    public static int busquedaBinariaInvertida(int[] arreglo, int valorBuscado){
         //busca de manera binaria un valor numerico en un arreglo. Devuelve la posicion de encontrarlo, -1 de no encontrarlo.
         boolean encontrado;
         int inicio, fin, medio, posicion;
