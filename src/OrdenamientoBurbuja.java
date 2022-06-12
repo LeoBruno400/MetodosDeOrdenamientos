@@ -1,6 +1,8 @@
 public class OrdenamientoBurbuja {
     public static void main(String[] args) {
       int[]arreglo = {89,45,68,90,29,34,17};
+      leerArreglo(arreglo);
+      System.out.println();
       burbuja(arreglo);
       leerArreglo(arreglo);
     }
