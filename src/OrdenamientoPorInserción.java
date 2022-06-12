@@ -11,14 +11,14 @@ public class OrdenamientoPorInserción {
         System.out.println("El arreglo ordenado de mayor a menor: ");
         insercionInvertida(arr);
         mostrarArreglo(arr);
-        
+
     }
 
     public static void insercion(int[] arr) {
         int i, j, aux;
-        int longitud = arr.length;
+        int n = arr.length - 1;
 
-        for (i = 1; i <= longitud - 1; i++) {
+        for (i = 1; i <= n; i++) {
             aux = arr[i];
             j = i;
             while (j > 0 && arr[j - 1] > aux) {
@@ -31,12 +31,12 @@ public class OrdenamientoPorInserción {
 
     public static void insercionInvertida(int[] arr) {
         int i, j, aux;
-        int longitud = arr.length;
+        int n = arr.length - 1;
 
-        for (i = longitud -1 ; i <= 0; i--) {
+        for (i = 1; i <= n; i++) {
             aux = arr[i];
             j = i;
-            while (j > 0 && arr[j - 1] > aux) {
+            while (j > 0 && arr[j - 1] < aux) {
                 arr[j] = arr[j - 1];
                 j = j - 1;
             }
