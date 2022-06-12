@@ -1,4 +1,4 @@
-public class OrdenamientoBurbujaInvertido {
+public class OrdenamientoBurbujaInvertida {
     public static void main(String[] args) {
       int[]arreglo = {89,45,68,90,29,34,17};
       leerArreglo(arreglo);
@@ -16,7 +16,7 @@ public class OrdenamientoBurbujaInvertido {
         }
     }
 
-    public static void burbuja (int[] arreglo){
+    public static void burbujaInvertida (int[] arreglo){
         int i,j, longitud, aux;
         longitud = arreglo.length;
         for (i= 0; i < longitud; i++) {
