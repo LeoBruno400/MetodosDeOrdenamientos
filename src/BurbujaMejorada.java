@@ -15,10 +15,11 @@ public class BurbujaMejorada {
         boolean ordenado = false;
         int i = 0, j, aux;
         int n = arr.length;
+        int k = n-1-i;
 
         while (i < n - 1 && !ordenado) {
             ordenado = true;
-            for (j = 0; j < n - i - 1; j++) {
+            for (j = 0; j < k; j++) {
                 if (arr[j] > arr[j + 1]) {
                     ordenado = false;
                     aux = arr[j];
@@ -34,10 +35,10 @@ public class BurbujaMejorada {
         boolean ordenado = false;
         int i = 0, j, aux;
         int n = arr.length;
-
+        int k = n-1-i;
         while (i < n - 1 && !ordenado) {
             ordenado = true;
-            for (j = 0; j < n - i - 1; j++) {
+            for (j = 0; j < k; j++) {
                 if (arr[j] < arr[j + 1]) {
                     ordenado = false;
                     aux = arr[j];
