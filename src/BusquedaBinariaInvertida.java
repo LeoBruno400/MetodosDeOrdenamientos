@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class BusquedaBinariaInversa {
+public class BusquedaBinariaInvertida {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arreglo = {20,18,16,14,12,10,8,6,4,2};
