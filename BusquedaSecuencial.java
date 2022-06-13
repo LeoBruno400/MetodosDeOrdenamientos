@@ -1,4 +1,4 @@
-public class ejercicio01 {
+public class BusquedaSecuencial {
     public static void main(String[] args) {
         int [] arreglo = {4,5,10,-7,2,20,22,45,22,1,66,2,55,30};
         System.out.println(busquedaSecuencial(arreglo, -7));
