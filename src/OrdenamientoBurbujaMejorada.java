@@ -1,4 +1,4 @@
-public class BurbujaMejorada {
+public class OrdenamientoBurbujaMejorada {
     public static void main(String[] args) {
         int[] arr = { 89, 45, 68, 90, 29, 34, 17 };
         System.out.println("El arreglo original es: ");
