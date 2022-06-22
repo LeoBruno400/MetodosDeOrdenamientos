@@ -14,12 +14,12 @@ public class OrdenamientoBurbujaMejorada {
     public static void burbujaMejorada(int[] arr) {
         boolean ordenado = false;
         int i = 0, j, aux;
-        int n = arr.length;
-        int k = n-1-i;
+        int k = arr.length;
+        int n = k-1-i;
 
-        while (i < n - 1 && !ordenado) {
+        while (i < k - 1 && !ordenado) {
             ordenado = true;
-            for (j = 0; j < k; j++) {
+            for (j = 0; j < n; j++) {
                 if (arr[j] > arr[j + 1]) {
                     ordenado = false;
                     aux = arr[j];
@@ -34,11 +34,11 @@ public class OrdenamientoBurbujaMejorada {
     public static void burbujaMejoradaInvertida(int[] arr) {
         boolean ordenado = false;
         int i = 0, j, aux;
-        int n = arr.length;
-        int k = n-1-i;
-        while (i < n - 1 && !ordenado) {
+        int k = arr.length;
+        int n = k-1-i;
+        while (i < k - 1 && !ordenado) {
             ordenado = true;
-            for (j = 0; j < k; j++) {
+            for (j = 0; j < n; j++) {
                 if (arr[j] < arr[j + 1]) {
                     ordenado = false;
                     aux = arr[j];
