@@ -3,7 +3,7 @@ public class OrdenamientoBurbujaInvertida {
       int[]arreglo = {89,45,68,90,29,34,17};
       leerArreglo(arreglo);
       System.out.println();
-      burbuja(arreglo);
+      burbujaInvertida(arreglo);
       leerArreglo(arreglo);
     }
 

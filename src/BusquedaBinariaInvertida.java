@@ -7,7 +7,7 @@ public class BusquedaBinariaInvertida {
         int posicion, valor;
         System.out.println("Ingrese un valor a buscar en el arreglo: ");
         valor = sc.nextInt();
-        posicion = busquedaBinaria(arreglo, valor);
+        posicion = busquedaBinariaInvertida(arreglo, valor);
         if(posicion == -1){
             System.out.println("El valor buscado no se encuentra en el arreglo.");
         }else{
